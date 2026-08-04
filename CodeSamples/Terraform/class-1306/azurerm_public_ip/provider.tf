@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-netflix-landing-zone"
-    storage_account_name = "netfliixstorage"
+    resource_group_name  = "rg-micro-dev"
+    storage_account_name = "netfliixstoraage"
     container_name       = "tfstate"
     key                  = "public_ip.tfstate"
   }

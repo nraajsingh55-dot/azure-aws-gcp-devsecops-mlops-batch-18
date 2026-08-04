@@ -2,14 +2,14 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "4.80.0"
+      version = "5.0.0"
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-micro-dev"
-    storage_account_name = "netfliixstoraage"
+    resource_group_name  = "example"
+    storage_account_name = "abcd1234"
     container_name       = "tfstate"
-    key                  = "resource_group.tfstate"
+    key                  = "prod.terraform.tfstate"
   }
 }
 
